@@ -1,14 +1,18 @@
-import Post from "./components/Post";
+// import styles from './App.module.css';
 
-import styles from './App.module.css';
+import Post from "./components/Post";
+import EstiloGlobal, { Container } from "./styles";
 
 function App() {
   return (
-    <div className={styles.app}>
-      <Post imageUrl="https://www.orangeboxminiaturas.com.br/img/products/batmovel-1989-figura-batman-em-metal-jada-toys-1-24-jad-98260_1_1000.jpg">
+    <>
+    <EstiloGlobal />
+    <Container>
+      <Post imageUrl="https://static3.tcdn.com.br/img/img_prod/460977/batman_vs_superman_batmobile_model_kit_dtc_13129_2_20201211162227.jpg">
         Olha só que legal minha miniatura do Batmóvel.
       </Post>
-    </div>
+    </Container>
+    </>
   );
 }
 
